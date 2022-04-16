@@ -56,7 +56,7 @@ class AddStaffFragment : Fragment() {
             valid = false
         }
 
-        if(postcode<1000||postcode>9999){
+        if(postcode<10000||postcode>99999){
             toast("Invalid postcode")
             valid = false
         }

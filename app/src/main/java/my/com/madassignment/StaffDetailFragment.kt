@@ -31,13 +31,9 @@ class StaffDetailFragment : Fragment() {
         binding = FragmentStaffDetailBinding.inflate(inflater, container, false)
         adapter = StaffAdapter()
         reset()
-//        val argsStaffId: StaffDetailFragmentArgs by navArgs()
-//        binding.displayName.text = argsStaffId.passStaffId
-        //load()
 
         return binding.root
     }
-
 
     private fun reset(){
         val s = vm.getID(id)

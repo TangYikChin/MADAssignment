@@ -32,9 +32,10 @@ class StaffListingFragment : Fragment() {
         adapter = StaffAdapter()
         {
             holder, s ->  holder.root.setOnClickListener {nav.navigate(R.id.staffDetailFragment,
-            bundleOf("id" to s.id))}
-            holder.editBtn.setOnClickListener{(toast("Edit"))}
-            holder.deleteBtn.setOnClickListener{(toast("Delete"))}
+                bundleOf("id" to s.id))}
+            holder.editBtn.setOnClickListener{nav.navigate(R.id.staffEditDetail,
+                bundleOf("id" to s.id))}
+            holder.deleteBtn.setOnClickListener{delete(s.id)}
         }
         load()
 
@@ -44,16 +45,23 @@ class StaffListingFragment : Fragment() {
         return binding.root
     }
 
+
     private fun toast(text: String) {
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
     }
 
     private fun load() {
         // TODO: Load data
-//
         vm.getAll().observe(viewLifecycleOwner){ staffs->
             adapter.submitList(staffs)
         }
+    }
+
+    private fun delete(id:String){
+        Firebase.firestore
+            .collection("staffs")
+            .document(id)
+            .delete()
     }
 
 

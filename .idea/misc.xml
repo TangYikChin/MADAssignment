@@ -7,9 +7,12 @@
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/activity_main2.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/fragment_add_staff.xml" value="0.536" />
+        <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/fragment_edit_staff_fragemnt.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/fragment_staff_detail.xml" value="0.5052631578947369" />
+        <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/fragment_staff_edit_detail.xml" value="0.6733601070950469" />
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/fragment_staff_listing.xml" value="0.4" />
         <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/layout/listing_layout.xml" value="0.6" />
+        <entry key="..\:/Users/yikch/Desktop/MADAssignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2555" />
       </map>
     </option>
   </component>

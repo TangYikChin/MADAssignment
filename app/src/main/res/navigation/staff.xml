@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_staffListingFragment_to_staffDetailFragment"
             app:destination="@id/staffDetailFragment" />
+        <action
+            android:id="@+id/action_staffListingFragment_to_staffEditDetail"
+            app:destination="@id/staffEditDetail" />
     </fragment>
     <fragment
         android:id="@+id/addStaffFragment"
@@ -31,4 +34,9 @@
             android:name="passStaffId"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/staffEditDetail"
+        android:name="my.com.madassignment.StaffEditDetail"
+        android:label="fragment_staff_edit_detail"
+        tools:layout="@layout/fragment_staff_edit_detail" />
 </navigation>
