@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MADAssignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="address">Address</string>
+    <string name="postcode">Postcode</string>
+    <string name="phonenum">PhoneNum</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="reset">Reset</string>
+    <string name="done">Done</string>
+    <string name="xxx">XXX</string>
+    <string name="gender">Gender</string>
+    <string name="state">State</string>
+</resources>

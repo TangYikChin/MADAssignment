@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563010789577",
+    "project_id": "helphappy-4aeef",
+    "storage_bucket": "helphappy-4aeef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563010789577:android:56a9ae0a734e18d0142d18",
+        "android_client_info": {
+          "package_name": "my.com.madassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563010789577-7sbqs0q6mrenk251ldj2adr150tn774j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTuxG2Ded7Lt05gGZU8qtIVa7ksf2an7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563010789577-7sbqs0q6mrenk251ldj2adr150tn774j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
