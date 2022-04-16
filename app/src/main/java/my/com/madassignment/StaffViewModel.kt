@@ -19,24 +19,33 @@ class StaffViewModel:ViewModel() {
         return null
     }
 
+    fun getID(id:String): Staff?{
+        return staffs.value?.find { s->s.id==id }
+    }
+
     fun getAll() = staffs
 
-    fun delete(id: String) {
+    fun delete(id: String,name: String) {
         // TODO
         col.document(id).delete()
+        col.document(name).delete()
     }
 
     fun deleteAll() {
         // TODO
-        //col.get().addOnSuccessListener { snap->snap.documents.forEach{doc->delete(doc.id)} }
-        staffs.value?.forEach { f->delete(f.id) }
+
+        staffs.value?.forEach { s->delete(s.id,s.name) }
     }
 
-    fun set(f: Staff) {
+    fun set(s: Staff) {
         // TODO
-        col.document(f.id).set(f)
+        col.document(s.id).set(s)
 
     }
 
+    private fun idExists (id: String): Boolean{
+
+        return staffs.value?.any{s -> s.id==id}?:false
+    }
 
 }

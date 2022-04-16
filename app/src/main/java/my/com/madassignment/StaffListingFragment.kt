@@ -29,7 +29,8 @@ class StaffListingFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentStaffListingBinding.inflate(inflater,container,false)
         binding.btnAddStaff.setOnClickListener { nav.navigate(R.id.addStaffFragment) }
-        adapter = StaffAdapter() {
+        adapter = StaffAdapter()
+        {
             holder, s ->  holder.root.setOnClickListener {nav.navigate(R.id.staffDetailFragment,
             bundleOf("id" to s.id))}
             holder.editBtn.setOnClickListener{(toast("Edit"))}
@@ -49,16 +50,10 @@ class StaffListingFragment : Fragment() {
 
     private fun load() {
         // TODO: Load data
-        Firebase.firestore
-            .collection("staffs")
-            .get()
-            .addOnSuccessListener { staffs-> val list = staffs.toObjects<Staff>()
-                adapter.submitList(list)
-                //var result=""
-                //list.forEach { s->result += "${s.id} ${s.name} ${s.age} ${s.gender} ${s.address} " +
-                        //"${s.postcode} ${s.state} ${s.phone}\n" }
-
-            }
+//
+        vm.getAll().observe(viewLifecycleOwner){ staffs->
+            adapter.submitList(staffs)
+        }
     }
 
 
