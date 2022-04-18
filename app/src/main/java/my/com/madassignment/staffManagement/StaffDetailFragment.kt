@@ -1,4 +1,4 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,10 +9,6 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import my.com.madassignment.databinding.FragmentStaffDetailBinding
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObjects
-import com.google.firebase.ktx.Firebase
 
 
 class StaffDetailFragment : Fragment() {
@@ -44,7 +40,7 @@ class StaffDetailFragment : Fragment() {
         }
         load(s)
     }
-    private fun load(s:Staff) {
+    private fun load(s: Staff) {
         binding.displayName.text=s.name
         binding.displayAge.text=s.age.toString()
         binding.displayAddress.text=s.address

@@ -1,4 +1,4 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,9 +11,8 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
-import my.com.madassignment.databinding.FragmentStaffDetailBinding
+import my.com.madassignment.R
 import my.com.madassignment.databinding.FragmentStaffListingBinding
 
 

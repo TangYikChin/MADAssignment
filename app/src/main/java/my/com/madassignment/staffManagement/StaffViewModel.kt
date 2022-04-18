@@ -1,4 +1,4 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

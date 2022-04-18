@@ -1,4 +1,4 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import com.google.firebase.firestore.DocumentId
 

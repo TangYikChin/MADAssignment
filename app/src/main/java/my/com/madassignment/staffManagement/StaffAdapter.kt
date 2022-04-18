@@ -1,21 +1,18 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.core.os.bundleOf
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import my.com.madassignment.databinding.FragmentStaffDetailBinding
-import my.com.madassignment.databinding.FragmentStaffListingBinding
+import my.com.madassignment.R
 
 
-class StaffAdapter(val fn: (StaffAdapter.ViewHolder,Staff) -> Unit = { _, _ -> })
-    :ListAdapter<Staff,StaffAdapter.ViewHolder>(DiffCallback) {
+class StaffAdapter(val fn: (ViewHolder, Staff) -> Unit = { _, _ -> })
+    :ListAdapter<Staff, StaffAdapter.ViewHolder>(DiffCallback) {
 
 
     companion object DiffCallback : DiffUtil.ItemCallback<Staff>() {

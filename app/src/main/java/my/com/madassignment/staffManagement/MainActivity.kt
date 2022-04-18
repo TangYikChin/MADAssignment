@@ -1,10 +1,11 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
 import my.com.madassignment.databinding.ActivityMainBinding
 import androidx.navigation.ui.setupActionBarWithNavController
+import my.com.madassignment.R
 
 class MainActivity : AppCompatActivity() {
 

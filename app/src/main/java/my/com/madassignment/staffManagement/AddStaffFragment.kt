@@ -1,4 +1,4 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import my.com.madassignment.R
 import my.com.madassignment.databinding.FragmentAddStaffBinding
 
 
@@ -67,7 +68,7 @@ class AddStaffFragment : Fragment() {
         }
 
         if(valid){
-            val s=Staff(
+            val s= Staff(
                 id = binding.editStaffId.text.toString().trim().uppercase(),
                 name = binding.editStaffName.text.toString().trim(),
                 age = binding.editStaffAge.text.toString().toIntOrNull() ?:0,
@@ -95,7 +96,7 @@ class AddStaffFragment : Fragment() {
     private fun getGender(): String {
         return when(binding.rgpStaffGender.checkedRadioButtonId){
             R.id.radStaffMale -> "Male"
-            R.id.radStaffFemale->"Female"
+            R.id.radStaffFemale ->"Female"
             else -> ""
         }
     }

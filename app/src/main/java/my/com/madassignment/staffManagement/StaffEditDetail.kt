@@ -1,17 +1,13 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.navigateUp
-import my.com.madassignment.databinding.FragmentStaffDetailBinding
 import my.com.madassignment.databinding.FragmentStaffEditDetailBinding
 
 

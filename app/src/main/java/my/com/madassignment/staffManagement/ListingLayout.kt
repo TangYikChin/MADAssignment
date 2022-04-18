@@ -1,7 +1,8 @@
-package my.com.madassignment
+package my.com.madassignment.staffManagement
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import my.com.madassignment.R
 
 class ListingLayout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

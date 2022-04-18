@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/staff"
-    app:startDestination="@id/staffListingFragment">
+    app:startDestination="@id/managerLogin">
 
     <fragment
         android:id="@+id/staffListingFragment"
-        android:name="my.com.madassignment.StaffListingFragment"
+        android:name="my.com.madassignment.staffManagement.StaffListingFragment"
         android:label="fragment_staff_listing"
         tools:layout="@layout/fragment_staff_listing" >
         <action
@@ -22,12 +22,12 @@
     </fragment>
     <fragment
         android:id="@+id/addStaffFragment"
-        android:name="my.com.madassignment.AddStaffFragment"
+        android:name="my.com.madassignment.staffManagement.AddStaffFragment"
         android:label="fragment_add_staff"
         tools:layout="@layout/fragment_add_staff" />
     <fragment
         android:id="@+id/staffDetailFragment"
-        android:name="my.com.madassignment.StaffDetailFragment"
+        android:name="my.com.madassignment.staffManagement.StaffDetailFragment"
         android:label="fragment_staff_detail"
         tools:layout="@layout/fragment_staff_detail" >
         <argument
@@ -36,7 +36,32 @@
     </fragment>
     <fragment
         android:id="@+id/staffEditDetail"
-        android:name="my.com.madassignment.StaffEditDetail"
+        android:name="my.com.madassignment.staffManagement.StaffEditDetail"
         android:label="fragment_staff_edit_detail"
         tools:layout="@layout/fragment_staff_edit_detail" />
+    <fragment
+        android:id="@+id/managerLogin"
+        android:name="my.com.madassignment.managerLogIn.ManagerLogin"
+        android:label="Login"
+        tools:layout="@layout/fragment_manager_login">
+        <action
+            android:id="@+id/action_managerLogin_to_staffListingFragment"
+            app:destination="@id/staffListingFragment" />
+        <action
+            android:id="@+id/action_managerLogin_to_forgetFragment"
+            app:destination="@id/forgetFragment" />
+        <action
+            android:id="@+id/action_managerLogin_to_unblockFragment"
+            app:destination="@id/unblockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetFragment"
+        android:name="my.com.madassignment.managerLogIn.ForgetFragment"
+        android:label="fragment_forget"
+        tools:layout="@layout/fragment_forget" />
+    <fragment
+        android:id="@+id/unblockFragment"
+        android:name="my.com.madassignment.managerLogIn.UnblockFragment"
+        android:label="fragment_unblock"
+        tools:layout="@layout/fragment_unblock" />
 </navigation>

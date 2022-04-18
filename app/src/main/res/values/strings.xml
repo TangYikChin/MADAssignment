@@ -15,4 +15,7 @@
     <string name="xxx">XXX</string>
     <string name="gender">Gender</string>
     <string name="state">State</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="forget_password">Forget Password</string>
 </resources>
