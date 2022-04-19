@@ -34,7 +34,8 @@ class ForgetFragment : Fragment() {
         binding = FragmentForgetBinding.inflate(inflater, container, false)
         binding.btnSend.setOnClickListener { send() }
         binding.btnForgetSub.setOnClickListener { resetPass(num) }
-        vm.abc()
+        vm.initialize()
+
         return binding.root
     }
     // TODO: Compose and send email

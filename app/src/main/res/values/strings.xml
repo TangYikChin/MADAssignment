@@ -18,4 +18,8 @@
     <string name="password">Password</string>
     <string name="email">E-mail</string>
     <string name="forget_password">Forget Password</string>
+    <string name="sent">Sent</string>
+    <string name="enter_4_digit_otp">Enter 4-digit OTP</string>
+    <string name="app_email">App Email</string>
+    <string name="submit">Submit</string>
 </resources>

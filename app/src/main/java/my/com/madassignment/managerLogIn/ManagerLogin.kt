@@ -1,7 +1,6 @@
 package my.com.madassignment.managerLogIn
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -32,6 +31,7 @@ class ManagerLogin : Fragment() {
         binding=FragmentManagerLoginBinding.inflate(inflater, container, false)
         binding.btnLogin.setOnClickListener { login() }
         binding.forgetPass.setOnClickListener { nav.navigate(R.id.forgetFragment) }
+        binding.btnUnblock.setOnClickListener { nav.navigate(R.id.unblockFragment) }
         return binding.root
     }
 
@@ -55,7 +55,7 @@ class ManagerLogin : Fragment() {
                     if(checkTimer<=3){
                         if(success){
                             Toast.makeText(context, "Valid", Toast.LENGTH_SHORT).show()
-                            nav.navigate(R.id.staffListingFragment)
+                            nav.navigate(R.id.homeFragment)
                         }
                         else{
                             Toast.makeText(context, "Invalid", Toast.LENGTH_SHORT).show()
@@ -108,12 +108,7 @@ class ManagerLogin : Fragment() {
 
     }
 
-//    private  fun delete(m:Manager){
-//        Firebase.firestore
-//            .collection("users")
-//            .document(m.id)
-//            .delete()
-//    }
+
     private fun toast(text: String) {
         Toast.makeText(context,text, Toast.LENGTH_SHORT).show()
     }
